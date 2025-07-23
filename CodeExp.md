@@ -1,5 +1,5 @@
 ### Project Overview
-This project implements Knowledge Distillation for ECG arrhythmia classification using the MIT-BIH Arrhythmia Database. A complex teacher CNN classifies ECG segments as normal or abnormal, and its knowledge is distilled into a lightweight student CNN suitable for resource-constrained devices (e.g., wearables). The project is designed to run in Google Colab and be showcased on GitHub to enhance your PhD application profile in Biomedical Signal Processing.
+This project implements Knowledge Distillation for ECG arrhythmia classification using the MIT-BIH Arrhythmia Database. A complex teacher CNN classifies ECG segments as normal or abnormal, and its knowledge is distilled into a lightweight student CNN suitable for resource-constrained devices (e.g., wearables). The project is designed to run in Google Colab and be showcased on GitHub to enhance the PhD application profile in Biomedical Signal Processing.
 
 ---
 
@@ -50,7 +50,7 @@ import matplotlib.pyplot as plt
   - `scikit-learn`: For data preprocessing and splitting.
   - `tensorflow`: For building and training neural networks.
   - `matplotlib`: For plotting training results and visualizations.
-- The `import` statements load these libraries into your Colab environment, making their functions available.
+- The `import` statements load these libraries into the Colab environment, making their functions available.
 - **What to expect**: The installation may take a minute or two. You’ll see output confirming the libraries are installed (e.g., `Successfully installed ...`).
 - **What to do**: Open a new Google Colab notebook. Copy this code into the first cell and run it (click the play button or press `Shift+Enter`). Wait for the installations to complete, then proceed to Step 2.
 
@@ -98,7 +98,7 @@ print(f"Unique labels: {np.unique(labels)}")
 ```
 
 **Explanation**:
-- `!wget ...`: Downloads the MIT-BIH database to `/content/mitdb` in your Colab environment. This includes ECG signal files (`.dat`) and annotation files (`.atr`).
+- `!wget ...`: Downloads the MIT-BIH database to `/content/mitdb` in the Colab environment. This includes ECG signal files (`.dat`) and annotation files (`.atr`).
 - `records = ['100', '101', '102']`: We use three records to keep the dataset small for faster processing. Each record is an ECG recording from a patient.
 - `wfdb.rdrecord`: Loads the ECG signal data.
 - `wfdb.rdann`: Loads the annotations, which mark heartbeat locations and types (e.g., 'N' for normal, 'V' for ventricular ectopic).
@@ -458,9 +458,9 @@ print(f"Parameter reduction: {((teacher_params - student_params) / teacher_param
 ---
 
 #### Step 9: Save Results and Organize for GitHub
-**What this step does**: We save the trained models, evaluation results, and a README file to prepare the project for your GitHub repository.
+**What this step does**: We save the trained models, evaluation results, and a README file to prepare the project for the GitHub repository.
 
-**Why it’s important**: A well-organized GitHub repository with clear documentation will showcase your skills to PhD admissions committees, highlighting your expertise in ECG processing and deep learning.
+**Why it’s important**: A well-organized GitHub repository with clear documentation will showcase the skills to PhD admissions committees, highlighting the expertise in ECG processing and deep learning.
 
 **Code**:
 ```python
@@ -511,7 +511,7 @@ This project implements Knowledge Distillation (KD) for ECG arrhythmia classific
 - `src/*.py`: Python scripts for each step
 
 ## How to Run
-1. Clone the repository: `git clone https://github.com/your-username/ECG-Knowledge-Distillation`
+1. Clone the repository: `git clone https://github.com/the-username/ECG-Knowledge-Distillation`
 2. Install dependencies: `pip install wfdb numpy pandas scikit-learn tensorflow matplotlib`
 3. Run the notebook or scripts in the `src/` folder.
 
@@ -521,7 +521,7 @@ This project implements Knowledge Distillation (KD) for ECG arrhythmia classific
 - Explore additional ECG datasets (e.g., PTB-XL).
 
 ## Author
-[Your Name], final-year B.Sc. student in Information and Communication Engineering, aiming for a PhD in Biomedical Signal Processing.
+[the Name], final-year B.Sc. student in Information and Communication Engineering, aiming for a PhD in Biomedical Signal Processing.
 """
 with open('/content/README.md', 'w') as f:
     f.write(readme_content)
@@ -537,15 +537,15 @@ files.download('/content/README.md')
 **Explanation**:
 - `save`: Saves the teacher and student models as `.h5` files for reuse.
 - The classification report is saved as `classification_report.txt` to document the evaluation results.
-- The `README.md` file provides a professional overview of the project, including the dataset, methodology, results, and instructions for running it. Replace `[Your Name]` with your actual name.
-- `files.download`: Downloads the files to your computer for uploading to GitHub.
+- The `README.md` file provides a professional overview of the project, including the dataset, methodology, results, and instructions for running it. Replace `[the Name]` with the actual name.
+- `files.download`: Downloads the files to the computer for uploading to GitHub.
 - **What to expect**: Four files (`teacher_model.h5`, `student_model.h5`, `classification_report.txt`, `README.md`) will download automatically.
 - **What to do**:
   1. Run this cell after Step 8.
-  2. Download the files to your computer.
+  2. Download the files to the computer.
   3. Create a GitHub repository named `ECG-Knowledge-Distillation`.
   4. Create folders: `notebooks/` and `src/`.
-  5. Export your Colab notebook as `ecg_kd_notebook.ipynb` (File > Download > .ipynb) and upload it to `notebooks/`.
+  5. Export the Colab notebook as `ecg_kd_notebook.ipynb` (File > Download > .ipynb) and upload it to `notebooks/`.
   6. Split the code from Steps 1–8 into separate `.py` files (e.g., `setup.py`, `load_data.py`, etc.) and upload them to `src/`.
   7. Upload `teacher_model.h5`, `student_model.h5`, `classification_report.txt`, and `README.md` to the root of the repository.
   8. Use Git commands or the GitHub website to push the files:
@@ -553,7 +553,7 @@ files.download('/content/README.md')
      git init
      git add .
      git commit -m "Initial commit of ECG KD project"
-     git remote add origin https://github.com/your-username/ECG-Knowledge-Distillation.git
+     git remote add origin https://github.com/the-username/ECG-Knowledge-Distillation.git
      git push -u origin main
      ```
   9. Verify the repository structure:
@@ -577,16 +577,16 @@ files.download('/content/README.md')
      ```
 
 
-### Why This Matters for Your PhD Profile
-This project demonstrates your ability to:
-- Work with real-world ECG data (MIT-BIH database), aligning with your interest in Biomedical Signal Processing.
+### Why This Matters for the PhD Profile
+This project demonstrates the ability to:
+- Work with real-world ECG data (MIT-BIH database), aligning with the interest in Biomedical Signal Processing.
 - Implement advanced machine learning techniques like Knowledge Distillation, showing technical expertise.
 - Debug and resolve complex errors, a critical skill for PhD research.
 - Present a professional, well-documented project on GitHub, which will impress PhD admissions committees.
 
 To maximize impact:
-- Link the GitHub repository in your PhD Statement of Purpose and LinkedIn profile.
-- Mention in your application how this project aligns with your goal of developing efficient ECG analysis models for wearables.
+- Link the GitHub repository in the PhD Statement of Purpose and LinkedIn profile.
+- Mention in the application how this project aligns with the goal of developing efficient ECG analysis models for wearables.
 - Consider extending the project (e.g., multi-class classification or deployment on edge devices) as future work to discuss in interviews.
 
-If you encounter any errors while running these steps, share the full error message, and I’ll provide a detailed fix. You’re on track to create a strong project for your PhD applications!
+If you encounter any errors while running these steps, share the full error message, and I’ll provide a detailed fix. You’re on track to create a strong project for the PhD applications!
