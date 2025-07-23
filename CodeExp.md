@@ -577,12 +577,7 @@ files.download('/content/README.md')
      ```
 
 
-### Why This Matters for the PhD Profile
-This project demonstrates the ability to:
-- Work with real-world ECG data (MIT-BIH database), aligning with the interest in Biomedical Signal Processing.
-- Implement advanced machine learning techniques like Knowledge Distillation, showing technical expertise.
-- Debug and resolve complex errors, a critical skill for PhD research.
-- Present a professional, well-documented project on GitHub, which will impress PhD admissions committees.
+
 
 To maximize impact:
 - Link the GitHub repository in the PhD Statement of Purpose and LinkedIn profile.
