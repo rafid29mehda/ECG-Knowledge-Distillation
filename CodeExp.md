@@ -5,7 +5,7 @@ This project implements Knowledge Distillation for ECG arrhythmia classification
 
 ### Step-by-Step Guide 
 
-#### Step 1: Set Up Google Colab and Install Dependencies
+#### Step 1: Install Dependencies
 
 **Code**:
 ```
