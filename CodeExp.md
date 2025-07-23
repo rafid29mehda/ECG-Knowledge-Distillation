@@ -579,9 +579,6 @@ files.download('/content/README.md')
 
 
 
-To maximize impact:
-- Link the GitHub repository in the PhD Statement of Purpose and LinkedIn profile.
-- Mention in the application how this project aligns with the goal of developing efficient ECG analysis models for wearables.
-- Consider extending the project (e.g., multi-class classification or deployment on edge devices) as future work to discuss in interviews.
+
 
 If weencounter any errors while running these steps, share the full error message, and I’ll provide a detailed fix. You’re on track to create a strong project for the PhD applications!
