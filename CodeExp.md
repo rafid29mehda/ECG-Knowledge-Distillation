@@ -6,9 +6,6 @@ This project implements Knowledge Distillation for ECG arrhythmia classification
 ### Step-by-Step Guide 
 
 #### Step 1: Set Up Google Colab and Install Dependencies
-**What this step does**: We set up the Google Colab environment by installing and importing the necessary Python libraries for ECG data processing, machine learning, and visualization.
-
-**Why it’s important**: These libraries are required to load ECG data, build and train neural networks, and visualize results. Without them, the project cannot proceed.
 
 **Code**:
 ```
