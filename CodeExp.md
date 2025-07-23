@@ -478,54 +478,6 @@ with open('/content/classification_report.txt', 'w') as f:
     f.write(f"Student model parameters: {student_params}\n")
     f.write(f"Parameter reduction: {((teacher_params - student_params) / teacher_params) * 100:.2f}%")
 
-# Create README
-readme_content = """
-# ECG Arrhythmia Classification with Knowledge Distillation
-
-## Project Overview
-This project implements Knowledge Distillation (KD) for ECG arrhythmia classification using the MIT-BIH Arrhythmia Database. A complex teacher CNN model classifies ECG segments as normal or abnormal, and its knowledge is distilled into a lightweight student CNN model suitable for resource-constrained devices like wearables.
-
-## Dataset
-- **Source**: MIT-BIH Arrhythmia Database (PhysioNet)
-- **Records Used**: 100, 101, 102
-- **Task**: Binary classification (Normal vs. Abnormal heartbeats)
-
-## Methodology
-1. **Data Preprocessing**: Extract 200-sample ECG segments, normalize, and split into train/validation/test sets.
-2. **Teacher Model**: A complex CNN with ~500K parameters.
-3. **Student Model**: A lightweight CNN with ~10K parameters.
-4. **Knowledge Distillation**: The student learns from the teacher’s soft predictions and true labels using a combined loss function.
-5. **Evaluation**: Compare models using precision, recall, and F1-score on the test set.
-
-## Results
-- Classification reports are saved in `classification_report.txt`.
-- Teacher model parameters: ~500K
-- Student model parameters: ~10K
-- Parameter reduction: ~98%
-
-## Files
-- `teacher_model.h5`: Saved teacher model
-- `student_model.h5`: Saved student model
-- `classification_report.txt`: Evaluation results
-- `notebooks/ecg_kd_notebook.ipynb`: Colab notebook
-- `src/*.py`: Python scripts for each step
-
-## How to Run
-1. Clone the repository: `git clone https://github.com/the-username/ECG-Knowledge-Distillation`
-2. Install dependencies: `pip install wfdb numpy pandas scikit-learn tensorflow matplotlib`
-3. Run the notebook or scripts in the `src/` folder.
-
-## Future Work
-- Extend to multi-class classification for specific arrhythmia types.
-- Deploy the student model on edge devices like wearables.
-- Explore additional ECG datasets (e.g., PTB-XL).
-
-## Author
-[the Name], final-year B.Sc. student in Information and Communication Engineering, aiming for a PhD in Biomedical Signal Processing.
-"""
-with open('/content/README.md', 'w') as f:
-    f.write(readme_content)
-
 # Download files
 from google.colab import files
 files.download('/content/teacher_model.h5')
