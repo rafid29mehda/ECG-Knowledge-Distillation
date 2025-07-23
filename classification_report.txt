@@ -1,0 +1,23 @@
+Teacher Model Evaluation:
+              precision    recall  f1-score   support
+
+      Normal       0.99      1.00      0.99       650
+    Abnormal       0.99      0.99      0.99       301
+
+    accuracy                           0.99       951
+   macro avg       0.99      0.99      0.99       951
+weighted avg       0.99      0.99      0.99       951
+
+Student Model (KD) Evaluation:
+              precision    recall  f1-score   support
+
+      Normal       0.99      1.00      1.00       650
+    Abnormal       1.00      0.98      0.99       301
+
+    accuracy                           0.99       951
+   macro avg       0.99      0.99      0.99       951
+weighted avg       0.99      0.99      0.99       951
+
+Teacher model parameters: 2959105
+Student model parameters: 99073
+Parameter reduction: 96.65%
