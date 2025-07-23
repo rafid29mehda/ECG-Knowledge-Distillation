@@ -1,5 +1,5 @@
 ### Project Overview
-This project implements Knowledge Distillation for ECG arrhythmia classification using the MIT-BIH Arrhythmia Database. A complex teacher CNN classifies ECG segments as normal or abnormal, and its knowledge is distilled into a lightweight student CNN suitable for resource-constrained devices (e.g., wearables). The project is designed to run in Google Colab and be showcased on GitHub to enhance the PhD application profile in Biomedical Signal Processing.
+This project implements Knowledge Distillation for ECG arrhythmia classification using the MIT-BIH Arrhythmia Database. A complex teacher CNN classifies ECG segments as normal or abnormal, and its knowledge is distilled into a lightweight student CNN suitable for resource-constrained devices (e.g., wearables). 
 
 ---
 
