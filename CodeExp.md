@@ -259,7 +259,7 @@ plt.show()
   - Loss plot: Shows training and validation loss (should decrease).
   - Accuracy plot: Shows training and validation accuracy (should increase).
 - **What to expect**: A progress bar for 20 epochs (e.g., `Epoch 1/20 ... loss: 0.5000 - accuracy: 0.8000`) and two plots showing loss decreasing and accuracy increasing (e.g., validation accuracy >80%).
-- **What to do**: Run this cell after Step 4. Check the plots to ensure the model is learning (decreasing loss, increasing accuracy). If the accuracy is low (<70%), you can increase `epochs` to 30, but 20 is usually sufficient. Then proceed to Step 6.
+- **What to do**: Run this cell after Step 4. Check the plots to ensure the model is learning (decreasing loss, increasing accuracy). If the accuracy is low (<70%), wecan increase `epochs` to 30, but 20 is usually sufficient. Then proceed to Step 6.
 
 ---
 
@@ -432,7 +432,7 @@ print(f"Parameter reduction: {((teacher_params - student_params) / teacher_param
 
 **Explanation**:
 - `predict`: Generates predictions on `X_test`. The output is thresholded at 0.5 to convert probabilities to binary labels (0 for normal, 1 for abnormal).
-- `classification_report`: Shows precision, recall, and F1-score for normal and abnormal classes, allowing you to compare model performance.
+- `classification_report`: Shows precision, recall, and F1-score for normal and abnormal classes, allowing weto compare model performance.
 - `count_params`: Calculates the number of parameters in each model to show the student is much smaller.
 - **What to expect**: Output like:
   ```
@@ -589,4 +589,4 @@ To maximize impact:
 - Mention in the application how this project aligns with the goal of developing efficient ECG analysis models for wearables.
 - Consider extending the project (e.g., multi-class classification or deployment on edge devices) as future work to discuss in interviews.
 
-If you encounter any errors while running these steps, share the full error message, and I’ll provide a detailed fix. You’re on track to create a strong project for the PhD applications!
+If weencounter any errors while running these steps, share the full error message, and I’ll provide a detailed fix. You’re on track to create a strong project for the PhD applications!
