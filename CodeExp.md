@@ -1,4 +1,4 @@
-### Project Overview
+### Project ECG arrhythmia classification 
 This project implements Knowledge Distillation for ECG arrhythmia classification using the MIT-BIH Arrhythmia Database. A complex teacher CNN classifies ECG segments as normal or abnormal, and its knowledge is distilled into a lightweight student CNN suitable for resource-constrained devices (e.g., wearables). 
 
 ---
