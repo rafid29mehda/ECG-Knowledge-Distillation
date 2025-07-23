@@ -18,26 +18,6 @@ from sklearn.model_selection import train_test_split
 import tensorflow as tf
 from tensorflow.keras import layers, models
 import matplotlib.pyplot as plt
-```<xaiArtifact artifact_id="c887ae5e-4d5d-478a-bf5a-c823224dac4a" artifact_version_id="28fe6742-335e-431d-bb8d-9f1a13bc8493" title="setup.py" contentType="text/python">
-!pip install wfdb numpy pandas scikit-learn tensorflow matplotlib
-import wfdb
-import numpy as np
-import pandas as pd
-from sklearn.preprocessing import StandardScaler
-from sklearn.model_selection import train_test_split
-import tensorflow as tf
-from tensorflow.keras import layers, models
-import matplotlib.pyplot as plt
-</xaiArtifact>```python
-!pip install wfdb numpy pandas scikit-learn tensorflow matplotlib
-import wfdb
-import numpy as np
-import pandas as pd
-from sklearn.preprocessing import StandardScaler
-from sklearn.model_selection import train_test_split
-import tensorflow as tf
-from tensorflow.keras import layers, models
-import matplotlib.pyplot as plt
 ```
 
 **Explanation**:
