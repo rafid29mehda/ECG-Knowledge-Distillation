@@ -1,6 +1,5 @@
 # ECG Arrhythmia Classification with Knowledge Distillation
 
-## Project Overview
 This project implements a Knowledge Distillation (KD) framework for ECG arrhythmia classification using the MIT-BIH Arrhythmia Database. A complex teacher CNN model is trained to classify ECG segments as normal or abnormal, and its knowledge is distilled into a lightweight student CNN model suitable for resource-constrained devices like wearables.
 
 ## Dataset
